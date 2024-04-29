@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.8">
+<title>Luas Segitiga</title>
+</head>
+<body>
+<a href="Rumus.html">Kembali</a>
+<p>LUAS SEGITIGA</p>
+<form id="Formulir" name="formulir" method="post" action="">
+Masukan Alas</td>
+            <td><input name="alas" type="text" id="alas"></td>
+Masukan Tinggi</td>
+              <td><input name="tinggi" type="text" id="tinggi"></td>
+Hasil</td>
+                <td><input name="luas" type="text" id="luas"></td>
+</table>
+<p>
+<input name="cari" type="button" id="cari" value="hitung" class="btn"
+onclick="cariluas()"/>
+</p>
+</form>
+<p>
+<script laguage="javascript">
+function cariluas()
+{
+alas=formulir.alas.value;
+tinggi=formulir.tinggi.value;
+formulir.luas.value=0.5*alas*tinggi;
+}
+</script>
+</body>
+</html>

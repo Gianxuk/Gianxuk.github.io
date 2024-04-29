@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Jajar Genjang</title>
+</head>
+<body>
+   <a href="Rumus.html">Kembali</a>
+   <p>Masukkan Alas</p>
+   <input type="number" id="alas">
+   <p>Masukkan Tinggi</p>
+   <input type="number" id="tinggi">
+   <button onclick="hitung()">Hitung</button>
+   <p id="hasil"></p>
+</body>
+<script>
+   function hitung(){
+      const alas = document.getElementById("alas").value 
+      const tinggi = document.getElementById("tinggi").value
+      hasil = (alas * tinggi) 
+      const tampilkanhasil = document.getElementById('hasil').innerHTML = hasil
+   }
+</script>
+</html>

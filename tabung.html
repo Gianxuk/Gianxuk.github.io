@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menghitung volume tabung</title>
+<script type="text/javascript">
+     function hitungluas(){
+     alas=document.getElementById("alas").value;
+     tinggi=document.getElementById("tinggi").value;
+     luas=(alas*tinggi)*0.5;
+     document.getElementById("luas").value=luas;
+     }
+</script>
+</head>
+<body>
+<a href="Rumus.html">Kembali</a>
+ <form id="form1" name="form" method="post" action="">
+  <p>r : 
+    <input type="text" name="r"/>
+</p>
+  <p>
+    tinggi : 
+    <input type="text" name="tinggi"/>
+</p>
+<p>
+    Hasil : 
+    <input type="text" name="hasil"/>
+</p>
+  <p>
+    <input type="button" onclick="hitung()" value="hitung">
+    <input type="reset">
+  </p>
+</form>
+
+<script>
+  function cek(){
+    if(form.r.value=="" || form.tinggi.value==""){
+    alert("angka kosong");
+    exit
+    }
+  }
+  function hitung(){
+    cek();
+    a=parseInt(form.r.value);
+    b=parseInt(form.tinggi.value);
+    form.hasil.value=3.14*a*a*b;
+  }
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Persegi</title>
+</head>
+<body>
+   <a href="Rumus.html">Kembali</a>
+   <p>Masukkan Sisi</p>
+   <input type="number" id="sisi">
+   <button onclick="hitung()">Hitung</button>
+   <p id="hasil"></p>
+</body>
+<script>
+   function hitung(){
+      const sisi = document.getElementById("sisi").value 
+      hasil = (sisi * sisi) 
+      const tampilkanhasil = document.getElementById('hasil').innerHTML = hasil
+   }
+</script>
+</html>
